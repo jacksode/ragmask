@@ -3,12 +3,16 @@
     <meta name="viewport" content="width=device-width">
     <style>
         body {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
             text-align: center;
         }
         #body {
+            color: #444;
             max-width: 800px;
             margin-left: auto;
             margin-right: auto;
+            padding-left: 10px;
+            padding-right: 10px;
         }
         img#top {
             width: 100%;
@@ -16,20 +20,26 @@
             -webkit-clip-path: circle(50% at 50% 50%);
             clip-path: circle(50% at 50% 50%);
         }
+        img#title {
+            width: 100%;
+            max-width: 414px;
+            margin-bottom: 20px;
+        }
         img.icon {
             position: relative;
             top: 3px;
             height: 12pt;
             margin-left: 10px;
         }
+        .nowrap {
+            white-space: nowrap;
+        }
     </style>
 </head>
 
 <div id=body>
-<h1>ragmask</h1>
-<p><em>Ultra-simple, fast-to-make, great-fitting mask.</em></p>
-
-<img id=top src="img/mask-side-bw.jpg">
+<img id=title src=img/title.svg alt="Ragmask"><br>
+<img id=top src=img/mask-side-bw.jpg alt="Ultra-simple, fast-to-make, great-fitting mask">
 
 <h2>
 Download instructions to build <a href="ragmask.pdf">ragmask v2.2 (PDF)</a>.
@@ -50,8 +60,9 @@ Download instructions to build <a href="ragmask.pdf">ragmask v2.2 (PDF)</a>.
 <p><a href=about/ >About</a></p>
 
 <p>
-    <img class=icon src=img/twitter.svg> <a href="https://twitter.com/ragmaskedbandit">@ragmaskedbandit</a>
-    <img class=icon src=img/insta.svg> <a href="https://www.instagram.com/ragmask/">@ragmask</a>
-    <img class=icon src=img/email.svg> <a href="mailto:contact@ragmask.com">contact@ragmask.com</a>
+    <span class=nowrap><img class=icon src=img/twitter.svg> <a href="https://twitter.com/ragmaskedbandit">@ragmaskedbandit</a></span>
+    <span class=nowrap><img class=icon src=img/insta.svg> <a href="https://www.instagram.com/ragmask/">@ragmask</a></span>
+    <span class=nowrap><img class=icon src=img/github.svg> <a href="https://github.com/lorenbrichter/ragmask">github/ragmask</a></span>
+    <span class=nowrap><img class=icon src=img/email.svg> <a href="mailto:contact@ragmask.com">contact@ragmask.com</a></span>
 </p>
 </div>
